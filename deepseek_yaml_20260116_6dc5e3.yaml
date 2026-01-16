@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ultra-file-search-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python ultra_bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
